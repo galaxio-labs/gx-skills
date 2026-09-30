@@ -11,9 +11,20 @@ The repo is organized as a top-level router skill plus nested tool-specific skil
 
 ## Installation
 
-### With `gops` (recommended)
+### With `gx` (recommended)
 
-If you have `gops` installed, use its native installer — no shell script, no `python3` / `ruby`:
+If you have `gx` (>= 0.16.0) installed, use its native installer — no shell script, no `python3` / `ruby`:
+
+```bash
+gx self skill install           # whole collection; auto-detects installed platforms
+gx self skill list              # list installable skills
+```
+
+`--source` accepts `owner/repo`, a git URL, or a local checkout; `--ref` selects a branch / tag; `--target codex|claude|zed|all` and `--dir <path>` choose destinations (both repeatable). Every `SKILL.md` frontmatter is validated before installing (built-in YAML parser, no external interpreter).
+
+### With `gops`
+
+If you have `gops` (>= 2.0.13) but not `gx` >= 0.16.0, install through it (the source must be given explicitly):
 
 ```bash
 gops self skill install --source galaxio-labs/gx-skills
@@ -22,7 +33,7 @@ gops self skill list --source galaxio-labs/gx-skills
 
 ### With `install.sh`
 
-Use this when you do not have `gops` yet (bootstrapping). Install the whole collection (router + nested skills):
+Use this when you have neither `gx` >= 0.16.0 nor `gops` >= 2.0.13 (bootstrapping). Install the whole collection (router + nested skills):
 
 ```bash
 ./install.sh                          # install all available platforms

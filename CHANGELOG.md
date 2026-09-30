@@ -1,5 +1,11 @@
 # 变更日志
 
+## [0.1.1] - 2026-09-30
+
+### 文档
+
+- README 安装说明改为 **With `gx`（推荐）**：用 `gx self skill install`（需 `gx >= 0.16.0`），无需 `gops`；`gops self skill install --source galaxio-labs/gx-skills`（需 `gops >= 2.0.13`）降为备选；`install.sh` 保留为两者都没有时的引导安装
+
 ## [0.1.0] - 2026-09-30
 
 ### 初始版本
