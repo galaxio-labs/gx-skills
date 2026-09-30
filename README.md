@@ -7,7 +7,8 @@ The repo is organized as a top-level router skill plus nested tool-specific skil
 ## Available Skills
 
 - `gx-skills` — top-level router for gx tasks.
-- `gx-engineering` — recommended `gx` usage: `run`/`adm`/`init`/`mod`/`doc`/`check`/`self`/`skill`, GXL authoring (structures, flow heads, annotations, control flow, variables, built-in constants), built-in `gx.*` capabilities, `gx.patch_file` marker edits, worked examples, pitfalls, and `_gal/` conventions. Deep material lives in `skills/gx-engineering/references/`.
+- `gx-cli` — running / managing `gx`: `run`/`adm`/`init`/`mod`/`doc`/`check`/`self`/`self skill`, `_gal/` layout, CLI flags, project init, self-update, and gops integration.
+- `gxl-authoring` — writing GXL: `mod`/`env`/`flow`/`fn`/`activity`, flow heads, `#[...]` annotations, control flow, variables & built-in constants, built-in `gx.*` capabilities, `gx.patch_file`, worked examples, and authoring pitfalls. Deep material lives in `skills/gxl-authoring/references/`.
 
 ## Installation
 
@@ -44,14 +45,14 @@ Use this when you have neither `gx` >= 0.16.0 nor `gops` >= 2.0.13 (bootstrappin
 Install a single skill by name (local checkout first, remote clone fallback):
 
 ```bash
-./install.sh gx-engineering --codex
-./install.sh gx-engineering --claude
+./install.sh gxl-authoring --codex
+./install.sh gx-cli --claude
 ```
 
 Remote install (no local checkout):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/galaxio-labs/gx-skills/main/install.sh) gx-engineering
+bash <(curl -fsSL https://raw.githubusercontent.com/galaxio-labs/gx-skills/main/install.sh) gxl-authoring
 ```
 
 See `install.sh --help` for all options.
@@ -77,7 +78,9 @@ gx-skills/
 ├── agents/
 │   └── openai.yaml
 └── skills/
-    └── gx-engineering/
+    ├── gx-cli/
+    │   └── SKILL.md
+    └── gxl-authoring/
         ├── SKILL.md
         └── references/
             ├── gxl-syntax.md

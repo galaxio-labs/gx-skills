@@ -1,5 +1,13 @@
 # 变更日志
 
+## [0.3.0] - 2026-09-30
+
+### 拆分：`gx-engineering` → `gx-cli` + `gxl-authoring`
+
+- **`gx-cli`**：CLI 运维 —— `gx run`/`adm`/`init`/`mod`/`doc`/`check`/`self`/`self skill`、`_gal` 布局、flags、项目初始化、自升级、与 gops 的集成与陷阱
+- **`gxl-authoring`**：GXL 编写 —— 结构（`mod`/`env`/`flow`/`fn`/`activity`）、flow 头部、`#[...]` 注解、控制流、变量与内置常量、内置 `gx.*` 能力、`gx.patch_file`、示例、坑位；深度材料在 `references/`（原 `gx-engineering/references/*` 迁移过来）
+- 顶层路由 `SKILL.md` 与 README 同步；`gx-engineering` 名称移除
+
 ## [0.2.0] - 2026-09-30
 
 ### gx-engineering：基于 `galaxy-flow/docs` 补齐 GXL 参考
