@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gx Skills"
+  short_description: "Focused skills for gx (galaxy-flow) and GXL workflows"
+  default_prompt: "Use $gx-skills to work with gx (galaxy-flow) and GXL workflows."
