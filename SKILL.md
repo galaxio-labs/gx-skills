@@ -9,7 +9,7 @@ Top-level collection for `gx` (galaxy-flow) skills.
 
 ## Routing
 
-- For `gx` — `gx run/adm/init/mod/doc/check/self`, GXL workflow authoring and pitfalls (`gx.shell`/`gx.cmd`, `silence`, backgrounding), built-in `gx.*` capabilities, and `_gal/` conventions — read `skills/gx-engineering/SKILL.md`.
+- For `gx` — `gx run/adm/init/mod/doc/check/self/skill`, GXL authoring (structures, flow heads, annotations, control flow, variables, built-in constants), built-in `gx.*` capabilities, `gx.patch_file` marker edits, worked examples, and pitfalls — read `skills/gx-engineering/SKILL.md` (its `references/*.md` carry the depth).
 - If the nested skill references files, resolve them relative to its own directory.
 - Do not load every nested skill by default. Pick only the one matching the user's task.
 

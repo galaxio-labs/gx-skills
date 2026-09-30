@@ -1,5 +1,17 @@
 # 变更日志
 
+## [0.2.0] - 2026-09-30
+
+### gx-engineering：基于 `galaxy-flow/docs` 补齐 GXL 参考
+
+- `gx-engineering/SKILL.md` 重写扩充：命令（含 `gx run --exists`、`gx self skill`）、flags、`_gal` 约定、GXL 结构（`mod`/`env`/`flow`/`fn`/`activity`）、flow 头部三种形式、注解、调用语法、控制流、变量（大小写不敏感、`ENV_` 前缀）、内置常量
+- 新增 `skills/gx-engineering/references/`（自 `galaxy-flow/docs` 整理）：
+  - `gxl-syntax.md`：语法骨架（EBNF）与结构 / 注解 / 控制流 / 变量 / 内置常量
+  - `gxl-builtins.md`：全部 `gx.*` 内置能力与表达式函数（用途、参数、示例、约束）
+  - `gxl-examples.md`：示例集（assert / dryrun / fun / read / shell / template / transaction / vars）
+  - `patch-file.md`：`gx.patch_file` 的 marker 模型、参数、MVC 设计与约束
+- 顶层路由 `SKILL.md` 与 README 同步
+
 ## [0.1.1] - 2026-09-30
 
 ### 文档

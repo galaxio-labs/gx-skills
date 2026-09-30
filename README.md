@@ -7,7 +7,7 @@ The repo is organized as a top-level router skill plus nested tool-specific skil
 ## Available Skills
 
 - `gx-skills` — top-level router for gx tasks.
-- `gx-engineering` — recommended `gx` usage: `run`/`adm`/`init`/`mod`/`doc`/`check`/`self`, GXL authoring & pitfalls (`gx.shell`/`gx.cmd`, `silence`, backgrounding), built-in `gx.*` capabilities, and `_gal/` conventions.
+- `gx-engineering` — recommended `gx` usage: `run`/`adm`/`init`/`mod`/`doc`/`check`/`self`/`skill`, GXL authoring (structures, flow heads, annotations, control flow, variables, built-in constants), built-in `gx.*` capabilities, `gx.patch_file` marker edits, worked examples, pitfalls, and `_gal/` conventions. Deep material lives in `skills/gx-engineering/references/`.
 
 ## Installation
 
@@ -78,7 +78,12 @@ gx-skills/
 │   └── openai.yaml
 └── skills/
     └── gx-engineering/
-        └── SKILL.md
+        ├── SKILL.md
+        └── references/
+            ├── gxl-syntax.md
+            ├── gxl-builtins.md
+            ├── gxl-examples.md
+            └── patch-file.md
 ```
 
 ## Notes
